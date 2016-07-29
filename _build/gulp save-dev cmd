@@ -1,0 +1,7 @@
+FIRST!:
+
+npm install --save-dev gulp
+
+THEN:
+
+npm install --save-dev gulp-connect jshint gulp-jshint gulp-bower gulp-rename gulp-concat gulp-uglify gulp-imagemin gulp-sass node-bourbon node-neat browserify vinyl-source-stream vinyl-buffer gulp-cssnano gulp-livereload gulp-sync glob

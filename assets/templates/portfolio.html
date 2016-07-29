@@ -1,0 +1,31 @@
+
+<section ng-controller="portCtrl">
+  <div class="port">
+    <img id="portLogo" class="cover-container logo" src="assets/img/porto-logo.png" alt="Portfolio Logo"/>
+    <div>
+      <div class="port-nav">
+        <ul class="nav nav-pills">
+          <li ng-class="{'active':isCurrentPage('spacey')}"><a ng-click="setCurrentPage('spacey')">Spacey!</a></li>
+          <li ng-class="{'active':isCurrentPage('dante')}"><a ng-click="setCurrentPage('dante')">Dante Quiz</a></li>
+          <li ng-class="{'active':isCurrentPage('cloudbrowse')}"><a ng-click="setCurrentPage('cloudbrowse')">CloudBrowse</a></li>
+          <li ng-class="{'active':isCurrentPage('flickeroo')}"><a ng-click="setCurrentPage('flickeroo')">Flickeroo</a></li>
+          <li ng-class="{'active':isCurrentPage('tubesearch')}"><a ng-click="setCurrentPage('tubesearch')">Tube Search</a></li>
+          <li ng-class="{'active':isCurrentPage('tacklr')}"><a ng-click="setCurrentPage('tacklr')">Tacklr</a></li>
+        </ul>
+      </div>
+      <div class="desc-panel panel panel-animation" ng-hide="isInTransit">
+        <a href="{{page.url}}"><h1>{{page.label}}</h1></a>
+        <p class="lead">
+          {{page.desc}}
+        </p>
+      </div>
+
+    </div>
+      <img class="fullBg bg-animation" src="assets/img/spacey-shot.jpg" ng-if="isCurrentPage('spacey')" alt="Spacey screenshot" />
+      <img class="fullBg bg-animation" src="assets/img/dante-shot.jpg" ng-if="isCurrentPage('dante')" alt="Dante Quiz screenshot" />
+      <img class="fullBg bg-animation" src="assets/img/cloud-shot.jpg" ng-if="isCurrentPage('cloudbrowse')" alt="Cloudbrowse screenshot" />
+      <img class="fullBg bg-animation" src="assets/img/flicker-shot.jpg" ng-if="isCurrentPage('flickeroo')" alt="Flickeroo screenshot" />
+      <img class="fullBg bg-animation" src="assets/img/tube-shot.jpg" ng-if="isCurrentPage('tubesearch')" alt="Tube Search screenshot" />
+      <img class="fullBg bg-animation" src="assets/img/tacklr-shot.jpg" ng-if="isCurrentPage('tacklr')" alt="Tacklr screenshot" /-->
+  </div>
+</section>
